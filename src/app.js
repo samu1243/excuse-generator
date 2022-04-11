@@ -16,17 +16,15 @@ let when = [
   "while I was praying"
 ];
 function arreglo(arr) {
-  let random = ~~(Math.random() * arr.lenght);
+  let random = ~~(Math.random() * arr.length);
   return arr[random];
 }
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
   let resultado = `${arreglo(who)} ${arreglo(action)} ${arreglo(
     what
   )} ${arreglo(when)}`;
   let element = document.getElementById("excusa");
   element.innerHTML = resultado;
-  console.log(resultado);
 };
